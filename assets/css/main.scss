@@ -1,0 +1,33 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+//========== Ryan's Customizations START ==========
+
+// reduce the size of regular text in our posts a bit
+.page__content
+{
+	font-size: 0.8em;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+
+//========== Ryan's Customizations END ==========
