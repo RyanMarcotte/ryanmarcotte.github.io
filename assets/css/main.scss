@@ -10,17 +10,32 @@ search: false
 
 //========== Ryan's Customizations START ==========
 
-@import url('https://fonts.googleapis.com/css?family=Roboto Slab');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.masthead__inner-wrap {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.site-title {
+    font-family: "Rajdhani", sans-serif;
+}
+
+.site-subtitle {
+    font-family: "Ubuntu", sans-serif;
+}
 
 // reduce the size of regular text in our posts a bit
-.page__content
-{
-	font-size: 0.8em;
+.page__content {
+	font-size: 0.75em;
+}
+
+.author__name {
+    font-family: "Rajdhani", sans-serif;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 h1, .h1,
@@ -29,7 +44,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Rajdhani", serif;
   font-weight: bold;
 }
 
