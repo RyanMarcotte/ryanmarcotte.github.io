@@ -94,6 +94,7 @@ defaults:
       comments: true
       share: true
       related: true
+      toc: false
       classes: wide
   # _pages
   - scope:
@@ -102,6 +103,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      toc: false
       classes: wide
 
 category_archive:
