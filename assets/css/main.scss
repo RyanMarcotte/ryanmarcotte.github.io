@@ -30,6 +30,10 @@ $caption-font-family: $serif !default;
 
 //========== Ryan's CSS Customizations START ==========
 
+.archive__item-title {
+    font-family: $serif;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
