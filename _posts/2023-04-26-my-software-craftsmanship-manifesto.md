@@ -5,7 +5,8 @@ categories:
   - meta
 tags:
   - goals
-  - 
+  - principles
+excerpt: "The principles guiding how I build software"
 ---
 
 As an aspiring software craftsman, I am raising the bar of professional software development by practicing it and helping others to learn the craft.  Through this work I have come to value:
