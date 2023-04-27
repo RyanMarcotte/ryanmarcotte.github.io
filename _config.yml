@@ -91,6 +91,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      show_date: true
       comments: true
       share: true
       related: true
@@ -103,6 +104,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: false
+      show_date: false
+      comments: false
+      share: false
       toc: false
       classes: wide
 
@@ -112,3 +117,16 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# avoid the following warning when starting Jekyll
+# "No GitHub API authentication could be found. Some fields may be missing or have incorrect data."
+github: [metadata]
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      layout: single
+      excerpt: "TODO"
+    posts:
+      layout: single
+      excerpt: "TODO"
