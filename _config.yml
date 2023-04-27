@@ -64,7 +64,7 @@ author:
   name   : "Ryan Marcotte"
   avatar : "/assets/images/bio-photo.jpg"
   location: "Regina, SK, Canada"
-  bio    : "I solve business problems through people and technology.  The best designs steer people into pits of success."
+  bio    : "I solve business problems through people and technology.  I believe the best designs steer people into pits of success."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
