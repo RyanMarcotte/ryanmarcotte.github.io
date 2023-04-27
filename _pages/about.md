@@ -1,6 +1,8 @@
 ---
 permalink: /about/
 title: "About"
+toc: false
+classes: wide
 ---
 
 ## About Ryan Marcotte
@@ -14,7 +16,7 @@ Outside of work, I maintain a very active lifestyle through weight training and 
 - [`Functional`](https://github.com/JohannesMoersch/Functional) (active contributor)
 - [`Functional.CQS`](https://github.com/RyanMarcotte/Functional.CQS) (author)
 - [`Functional.Utilities`](https://github.com/RyanMarcotte/Functional.Utilities) (author)
-- [`NetArchTest`](https://github.com/BenMorris/NetArchTest) (single [pull request](https://github.com/BenMorris/NetArchTest/pullrequests/90))
+- [`NetArchTest`](https://github.com/BenMorris/NetArchTest) (single [pull request](https://github.com/BenMorris/NetArchTest/pull/90))
 
 ## Reading and Viewing List
 
