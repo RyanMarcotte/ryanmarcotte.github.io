@@ -11,14 +11,13 @@ search: false
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
 
 // https://github.com/mmistakes/minimal-mistakes/discussions/1352#discussioncomment-2074482
 
 $serif: Rajdhani, Georgia, Times, serif !default;
 $sans-serif: Ubuntu, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: "Roboto Mono", "Envy Code R", Consolas, "Courier New", monospace !default;
+$monospace: Consolas, "Courier New", monospace !default;
 
 $global-font-family: $sans-serif !default;
 $header-font-family: $serif !default;
@@ -98,10 +97,11 @@ h6, .h6 {
 
 div.highlighter-rouge, figure.highlight {
     font-size: 0.6em !important;
+    padding-right: 10px;
 }
 
 code {
-    white-space: pre-line !important;
+    white-space: pre-wrap !important;
 }
 
 //========== Ryan's CSS Customizations END ==========
