@@ -6,46 +6,36 @@ search: false
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
 
-//========== Ryan's Customizations START ==========
+//========== Ryan's Variable Customizations START ==========
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
 
-.masthead__inner-wrap {
-    font-family: "Ubuntu", sans-serif;
-}
+// https://github.com/mmistakes/minimal-mistakes/discussions/1352#discussioncomment-2074482
 
-.site-title {
-    font-family: "Rajdhani", sans-serif;
-}
+$serif: Rajdhani, Georgia, Times, serif !default;
+$sans-serif: Ubuntu, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$monospace: "Vin Mono Pro", "Roboto Mono", "Envy Code R", Consolas, "Courier New", monospace !default;
 
-.site-subtitle {
-    font-family: "Ubuntu", sans-serif;
-}
+$global-font-family: $sans-serif !default;
+$header-font-family: $sans-serif !default;
+$caption-font-family: $serif !default;
 
-// reduce the size of regular text in our posts a bit
+//========== Ryan's Variable Customizations END ==========
+
+@import "minimal-mistakes"; // main partials
+
+//========== Ryan's CSS Customizations START ==========
+
 .page__content {
-	font-size: 0.75em;
+    p,
+    li,
+    dl {
+        font-size: 0.75em;
+    }
 }
 
-.author__name {
-    font-family: "Rajdhani", sans-serif;
-}
-
-body {
-    font-family: "Ubuntu", sans-serif;
-}
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: "Rajdhani", serif;
-  font-weight: bold;
-}
-
-//========== Ryan's Customizations END ==========
+//========== Ryan's CSS Customizations END ==========
