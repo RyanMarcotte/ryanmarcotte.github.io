@@ -29,6 +29,7 @@ search: true
 markdown: kramdown
 highlighter: rouge # GitHub Pages currently (June 2019) only supports "rouge"
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: air
 # Outputting
 permalink: /:year/:month/:day/:title/
 paginate: 5 # amount of posts to show
