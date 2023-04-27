@@ -30,6 +30,18 @@ $caption-font-family: $serif !default;
 
 //========== Ryan's CSS Customizations START ==========
 
+.masthead {
+    background-color: #ddd !important;
+}
+
+.greedy-nav {
+    background-color: #ddd !important;
+}
+
+.masthead__menu ul {
+    font-size: 0.85em !important;
+}
+
 .archive__subtitle {
     font-size: 1.25em !important;
 }
