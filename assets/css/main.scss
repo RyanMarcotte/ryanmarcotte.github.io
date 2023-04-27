@@ -30,8 +30,17 @@ $caption-font-family: $serif !default;
 
 //========== Ryan's CSS Customizations START ==========
 
+.archive__subtitle {
+    font-size: 1.25em;
+}
+
 .archive__item-title {
+    font-size: 1em;
     font-family: $serif;
+}
+
+.archive__item-excerpt {
+    font-size: 0.7em;
 }
 
 h1, .h1,
