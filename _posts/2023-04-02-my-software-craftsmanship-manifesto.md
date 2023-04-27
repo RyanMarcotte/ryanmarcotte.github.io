@@ -1,6 +1,6 @@
 ---
 title: "My Software Craftsmanship Manifesto"
-date: 2023-04-26T18:53:33-06:00
+date: '2023-04-02 12:47:36 -0600'
 categories:
   - meta
 tags:
@@ -27,6 +27,7 @@ Some of my own personal priorities include:
 - **Reduce cognitive load** by [minimizing *accidental complexity*](https://blog.ploeh.dk/2019/07/01/yes-silver-bullet/)
 - [**Eliminate or reduce *toil***](https://sre.google/sre-book/eliminating-toil/) by simplifying and automating development processes
 - Proactively develop self-organizing individuals and teams
+- Apply [*SOLID* object-oriented design principles](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 - Apply principles of [*domain-driven design*](https://martinfowler.com/bliki/DomainDrivenDesign.html) as appropriate, especially its strategic patterns: [*bounded contexts*](https://martinfowler.com/bliki/BoundedContext.html), [*context maps*](https://github.com/ddd-crew/context-mapping), and the [*ubiquitous language*](https://martinfowler.com/bliki/UbiquitousLanguage.html)
 
 To end, **context is king**: there are no silver bullets, only tradeoffs.
