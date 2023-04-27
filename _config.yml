@@ -64,7 +64,7 @@ author:
   name   : "Ryan Marcotte"
   avatar : "/assets/images/bio-photo.jpg"
   location: "Regina, SK, Canada"
-  bio    : "I solve business problems through people and technology.  The best designs steer developers and users into *[pits of success](https://blog.codinghorror.com/falling-into-the-pit-of-success/)*."
+  bio    : "I solve business problems through people and technology.  The best designs steer developers and users into [*pits of success*](https://blog.codinghorror.com/falling-into-the-pit-of-success/)."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
