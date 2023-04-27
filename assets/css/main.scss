@@ -30,6 +30,20 @@ $caption-font-family: $serif !default;
 
 //========== Ryan's CSS Customizations START ==========
 
+.site-title {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bolder;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-weight: bold;
+}
+
 .page__content {
     p,
     li,
