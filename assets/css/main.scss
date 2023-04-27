@@ -18,10 +18,10 @@ search: false
 $serif: Rajdhani, Georgia, Times, serif !default;
 $sans-serif: Ubuntu, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: "Vin Mono Pro", "Roboto Mono", "Envy Code R", Consolas, "Courier New", monospace !default;
+$monospace: "Roboto Mono", "Envy Code R", Consolas, "Courier New", monospace !default;
 
 $global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
+$header-font-family: $serif !default;
 $caption-font-family: $serif !default;
 
 //========== Ryan's Variable Customizations END ==========
