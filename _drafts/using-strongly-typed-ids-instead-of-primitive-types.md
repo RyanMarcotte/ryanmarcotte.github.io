@@ -1,9 +1,10 @@
 ---
 layout: single
-title: Using Strongly-Typed IDs Instead of Primitive Types
+title: "DDD Fundamentals: Using Strongly-Typed IDs Instead of Primitive Types"
 categories:
-  - code
+  - domain-driven design
 tags:
+  - domain-driven design
   - types
 excerpt: Improve code semantics by using classes instead of primitive types
 ---
