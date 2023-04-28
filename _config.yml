@@ -126,7 +126,11 @@ jekyll_compose:
   default_front_matter:
     drafts:
       layout: single
+      category: TODO
+      tags: TODO
       excerpt: "TODO"
     posts:
       layout: single
+      category: TODO
+      tags: TODO
       excerpt: "TODO"
