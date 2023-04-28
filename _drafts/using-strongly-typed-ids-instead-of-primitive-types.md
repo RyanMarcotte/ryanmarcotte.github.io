@@ -1,6 +1,10 @@
 ---
 layout: single
 title: Using Strongly-Typed IDs Instead of Primitive Types
+categories:
+  - code
+tags:
+  - types
 excerpt: Improve code semantics by using classes instead of primitive types
 ---
 
