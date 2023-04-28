@@ -2,6 +2,11 @@
 layout: single
 title: Implementing a Strongly-Typed Wrapper Over a Dictionary of Objects
 date: '2023-04-23 16:17:31 -0600'
+categories:
+  - code
+tags:
+  - types
+  - utilities
 excerpt: A method for working with `Dictionary<string, object>`
 ---
 

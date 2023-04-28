@@ -1,6 +1,11 @@
 ---
 title: Architecture Decision Records
 date: '2023-04-09 12:47:36 -0600'
+categories:
+  - meta
+tags:
+  - documentation
+  - architecture
 excerpt: How I document architectural designs for myself and others
 ---
 
