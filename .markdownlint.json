@@ -1,0 +1,4 @@
+{
+	"MD013": false, // ignore long lines
+	"MD033": false  // ignore HTML elements
+}

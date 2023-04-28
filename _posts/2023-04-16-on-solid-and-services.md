@@ -2,6 +2,12 @@
 layout: single
 title: On SOLID and Services...
 date: '2023-04-16 13:57:17 -0600'
+categories:
+  - architecture
+tags:
+  - architecture
+  - solid
+  - principles
 excerpt: My thoughts on C# "service" classes and how they violate SOLID principles
 ---
 
