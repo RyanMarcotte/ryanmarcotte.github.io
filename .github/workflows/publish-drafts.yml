@@ -1,0 +1,22 @@
+# https://thedavecarroll.com/blog/publish-post-jekyll-on-a-schedule/
+# https://github.com/soywiz-archive/github-action-jekyll-publish-drafts
+name: Publish Blog Drafts
+
+# https://crontabkit.com/crontab-expression-generator
+# at 5:30 PM, only on Sunday
+on:
+  schedule:
+    - cron: '30 17 * * SUN'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Jekyll Publish Drafts
+      uses: soywiz/github-action-jekyll-publish-drafts@v2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        jekyll_path: ./
+        branch: master
