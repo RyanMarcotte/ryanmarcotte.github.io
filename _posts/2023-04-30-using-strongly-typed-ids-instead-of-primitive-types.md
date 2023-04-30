@@ -4,6 +4,7 @@ title: "DDD Fundamentals: Using Strongly-Typed IDs Instead of Primitive Types"
 date: '2023-04-30 11:32:59 -0600'
 category: domain-driven design
 tags:
+  - code
   - domain-driven design
   - types
 excerpt: Improve code semantics by using classes instead of primitive types
