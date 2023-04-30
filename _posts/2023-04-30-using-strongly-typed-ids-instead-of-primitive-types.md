@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "DDD Fundamentals: Using Strongly-Typed IDs Instead of Primitive Types"
+date: '2023-04-30 11:32:59 -0600'
 categories:
   - domain-driven design
 tags:
