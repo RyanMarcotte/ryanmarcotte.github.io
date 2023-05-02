@@ -6,7 +6,7 @@ categories:
 tags:
   - documentation
   - architecture
-excerpt: How I document architectural designs for myself and others
+excerpt: How I document architectural design decisions for myself and others
 ---
 
 If you are not already familiar with *architecture decision records* (ADRs), please read [Michael Nygard's introductory article](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions).  Amazon also has [prescriptive guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html) if you want more in-depth information.
