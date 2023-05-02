@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "DDD Fundamentals: Domain Commands, Domain Events, and Domain Errors"
+title: "Implementing Domain-Driven Design: Domain Commands, Domain Events, and Domain Errors"
 date: '2023-05-14 09:30:00 -0600'
 category: domain-driven design
 tags:

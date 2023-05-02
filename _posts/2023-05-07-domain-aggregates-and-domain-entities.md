@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "DDD Fundamentals: Domain Aggregates and Domain Entities"
+title: "Implementing Domain-Driven Design: Domain Aggregates and Domain Entities"
 date: '2023-05-07 09:30:00 -0600'
 category: domain-driven design
 tags:
