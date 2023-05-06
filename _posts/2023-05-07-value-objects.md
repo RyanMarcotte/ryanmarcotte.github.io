@@ -4,6 +4,7 @@ title: "Implementing Domain-Driven Design: Value Objects"
 date: '2023-05-07 09:30:00 -0600'
 category: domain-driven design
 tags:
+  - code
   - domain-driven design
 excerpt: Encapsulating concepts from your business domain
 ---
@@ -38,4 +39,23 @@ The strongly-typed IDs introduced in my [previous post](2023-04-30-using-strongl
 
 Note how value objects can be used to implement other value objects; for example, `Address` uses `StateOrProvinceCode`, `ISO3166CountryCode`, and `PostalCode`.
 
+Benefits of value objects:
+
+- improves code readability
+- with the proper guards, value objects are always in a valid state
+- increased compile-time safety; for example, given a method accepting `string email` and a method accepting `Email email`, you can be confident that the `email` parameter for the second method is a valid email address but not necessarily the first method
+- data and associated behavior are encapsulated; for example, `MoneyAmount` instances can be added and subtracted from each other provided they are the same currency
+
 I have seen some applications introduce a `ValueObject` base class that value objects inherit from but I have personally found this approach to be overkill.  Implementing value objects as immutable classes that implement `IEquatable<T>` has been sufficient for me.  ReSharper (or other productivity tools) can then be used to generate the equality operations for you.
+
+Some value objects in the list mentioned [*discriminated unions*](https://en.wikipedia.org/wiki/Tagged_union).  A discriminated union is used to hold a value that could take on several different, but fixed, types.  Your application can then respond accordingly to the individual types.
+
+A code generation template can be used to quickly generate discriminated unions.  I have templates at the ready for discriminated unions of two to five types.  Here are the templates for discriminated unions holding three types.
+
+<script src="https://gist.github.com/RyanMarcotte/99f5381bd2a82be52a923b5a5d870162.js"></script>
+
+<script src="https://gist.github.com/RyanMarcotte/faa5dd14e29872594e8fb8c0f4ddee84.js"></script>
+
+The `du3_property` template is used when the types in the discriminated union do that need to hold data.  The `du3_factory_func` template is used when at least one type in the discriminated union holds extra data.
+
+The `Match` method is used to map the set of discriminated union types onto the single type `T`.  This is similar to `switch` expressions in C# but is not quite the same.  The fundamental difference is that the `Match` method enforces compile-time safety as types are added or removed from the discriminated union because the `Match` method signature will change.  No such compile-time safety is enforced on a `switch` expression: if you add a new value to an `enum`, you must manually hunt through your code to find all corresponding `switch` expressions and modify them to include the new `enum` value.  Discriminated unions thus help reduce the maintenance burden over the long term.
