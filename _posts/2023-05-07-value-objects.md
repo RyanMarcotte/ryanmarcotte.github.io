@@ -39,4 +39,4 @@ The strongly-typed IDs introduced in my [previous post](2023-04-30-using-strongl
 
 Note how value objects can be used to implement other value objects; for example, `Address` uses `StateOrProvinceCode`, `ISO3166CountryCode`, and `PostalCode`.
 
-I have seen some applications introduce a `ValueObject` base class that value objects inherit from but I have personally found this approach to be overkill.  An immutable class that implements `IEquatable<T>` has been sufficient for me.  ReSharper (or other productivity tools) can then be used to generate the equality operations for you.
+I have seen some applications introduce a `ValueObject` base class that value objects inherit from but I have personally found this approach to be overkill.  Implementing value objects as immutable classes that implement `IEquatable<T>` has been sufficient for me.  ReSharper (or other productivity tools) can then be used to generate the equality operations for you.
