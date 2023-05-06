@@ -4,7 +4,6 @@ title: "Implementing Domain-Driven Design: Value Objects"
 date: '2023-05-07 09:30:00 -0600'
 category: domain-driven design
 tags:
-  - code
   - domain-driven design
 excerpt: Encapsulating concepts from your business domain
 ---
