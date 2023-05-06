@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Implementing Domain-Driven Design: Domain Services (Pure)"
-date: '2023-05-21 09:30:00 -0600'
+date: '2023-05-28 09:30:00 -0600'
 category: domain-driven design
 tags:
   - code

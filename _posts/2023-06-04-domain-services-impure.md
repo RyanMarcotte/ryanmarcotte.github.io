@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Domain Services (Impure)
-date: '2023-05-28 09:30:00 -0600'
+date: '2023-06-04 09:30:00 -0600'
 category: domain-driven design
 tags:
   - code
