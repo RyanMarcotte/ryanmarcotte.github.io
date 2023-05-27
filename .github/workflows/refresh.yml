@@ -1,11 +1,11 @@
-# File: .github/workflows/refresh.yml
+# https://docs.github.com/en/rest/pages?apiVersion=2022-11-28#request-a-github-pages-build
 name: Refresh
 
 # https://crontabkit.com/crontab-expression-generator
 # at 9:30 AM, only on Sunday
 on:
   schedule:
-    - cron: '30 9 * * SUN'
+    - cron: '30  * * SUN'
 
 jobs:
   refresh:
@@ -13,10 +13,8 @@ jobs:
     steps:
       - name: Trigger GitHub pages rebuild
         run: |
-          curl --fail --request POST \
-            --url https://api.github.com/repos/${{ github.repository }}/pages/builds \
-            --header "Authorization: Bearer $USER_TOKEN"
-        env:
-          # You must create a personal token with repo access as GitHub does
-          # not yet support server-to-server page builds.
-          USER_TOKEN: ${{ secrets.USER_TOKEN }}
+          gh api \
+          --method POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          /repos/RyanMarcotte/ryanmarcotte.github.io/pages/builds
