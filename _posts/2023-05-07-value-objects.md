@@ -34,7 +34,7 @@ Examples of value objects could include:
 - `ReferralCodeCandidate`...  accepts any string but defines a function that validates whether that string is a valid referral code for the application; that is, all strings are referral code candidates but only some strings are valid referral codes
 - `ReferralCode`...  holds a valid referral code
 
-The strongly-typed IDs introduced in my [previous post](2023-04-30-using-strongly-typed-ids-instead-of-primitive-types.md) are also examples of value objects.
+The strongly-typed IDs introduced in my [previous post]({{ site.baseurl }}{% post_url 2023-04-30-using-strongly-typed-ids-instead-of-primitive-types %}) are also examples of value objects.
 {: .notice--info}
 
 Note how value objects can be used to implement other value objects; for example, `Address` uses `StateOrProvinceCode`, `ISO3166CountryCode`, and `PostalCode`.
