@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Implementing Domain-Driven Design: Domain Proxies"
-date: '2023-06-11 09:30:00 -0600'
+date: '2023-06-18 09:30:00 -0600'
 category: domain-driven design
 tags:
   - code
