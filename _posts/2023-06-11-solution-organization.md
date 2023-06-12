@@ -35,6 +35,6 @@ The following project structure is my (current) preferred approach for organizin
 
 I have received some feedback that the project structure may be too fine-grained, but I personally find it easier for helping to control dependencies; for example, `MODULE_NAME.Domain.Reference`, `MODULE_NAME.IntegrationCommands`, and `MODULE_NAME.IntegrationEvents` are used across module boundaries and are easy to do so because those projects have no dependencies of their own.  The project dependencies are depicted below.
 
-[!module project dependency diagram](/assets/images/module-project-dependencies.png)
+![module project dependency diagram]({{site.baseurl}}/assets/images/module-project-dependencies.png)
 
-The solution's startup project takes dependencies on all `MODULE_NAME.WebAPI.Bootstrapping` assemblies - effectively depending on everything - and invokes the applicable bootstrapping code for all modules.  How this bootstrapping is done will be covered in a future post after all other tactical patterns.
+The solution's startup project takes dependencies on all `MODULE_NAME.WebAPI.Bootstrapping` assemblies - effectively depending on everything - and invokes the applicable bootstrapping code for all modules.  How this bootstrapping is done will be explained in a future post after all other tactical patterns have been covered.
