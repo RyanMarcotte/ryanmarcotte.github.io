@@ -19,4 +19,4 @@ jobs:
           -H "X-GitHub-Api-Version: 2022-11-28" \
           /repos/RyanMarcotte/ryanmarcotte.github.io/pages/builds
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
