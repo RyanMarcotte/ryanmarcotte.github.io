@@ -2,10 +2,10 @@
 name: Refresh
 
 # https://crontabkit.com/crontab-expression-generator
-# at 9:30 AM, only on Sunday
+# at 10:00 AM, only on Sunday
 on:
   schedule:
-    - cron: '0 16 * * SUN'
+    - cron: '0 16 * * *' #SUN'
 
 jobs:
   refresh:
@@ -18,5 +18,3 @@ jobs:
           -H "Accept: application/vnd.github+json" \
           -H "X-GitHub-Api-Version: 2022-11-28" \
           /repos/RyanMarcotte/ryanmarcotte.github.io/pages/builds
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
