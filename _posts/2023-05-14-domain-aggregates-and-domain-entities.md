@@ -35,6 +35,6 @@ To distinguish between domain aggregates and domain entities, I have defined two
 
 <script src="https://gist.github.com/RyanMarcotte/8d99da769b2f112b78000c5fea5c7519.js"></script>
 
-The domain aggregate and domain entity classes being declared `abstract` is an intentional implementation choice.  Many examples you will find across the Internet do not do this.  This does not mean their approach is incorrect or that my approach is correct.  As always, **it depends**.  I will dive into why `abstract` classes are used in a future post.
+The domain aggregate and domain entity classes being declared `abstract` is an intentional implementation choice.  Many examples you will find across the Internet do not do this.  This does not mean their approach is incorrect or that my approach is correct.  As always, **it depends**.  I will dive into why `abstract` classes are used in [a future post]({{ site.baseurl }}{% post_url 2023-06-18-domain-proxies-simple %}).
 
 The above code samples include references to [*domain events*](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation), which I will not describe here.  My next post will discuss my preferred approach for both domain commands and domain events.  The code generation templates for both `DomainAggregate<TID>` and `DomainEntity<TID>` implementations will also be given at that time.

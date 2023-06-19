@@ -6,7 +6,7 @@ category: domain-driven design
 tags:
   - code
   - domain-driven design
-excerpt: Defining object-relational mapping for complex domain aggregates
+excerpt: Defining object-relational mapping for simple domain aggregates
 ---
 
 In an [earlier post]({{ site.baseurl }}{% post_url 2023-05-14-domain-aggregates-and-domain-entities %}), we covered domain aggregates and how they are used to encapsulate data and behavior such that data is kept in a valid, consistent state at all times.  Recall that the example domain aggregate implementation used `abstract` classes.  In this post, I will explain the rationale for this implementation choice.
